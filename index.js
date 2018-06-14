@@ -9,13 +9,13 @@ app.use(bodyParser.urlencoded());
 // parse the file that is uploaded
 app.use(fileUpload());
 
-app.use("/dbroutes", dbroutes);
+app.use("/dbroutes", dbroutes); 
 
 app.set('views',__dirname+'/public/templates');
 app.set('view engine','ejs'); 
 
 app.listen(4500, function(){
-    console.log("Server is listening on 4500");
+    console.log("Server is listening on 4500..");
 });
 
 app.get('/', function(request, response){
