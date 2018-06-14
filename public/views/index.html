@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>My Node JS App</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js"></script>
+        <script src="jquery/dist/jquery.min.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="alert alert-info">
+            <h1>Node JS App is running !!!</h1>
+        </div>
+        <div class="jumbotron">
+            <form action="dbroutes/addpeople" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <th>sno</th>
+                    <td><input type="text" name="sno"></td>
+                </tr>
+                <tr>
+                    <th>name</th>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <th>city</th>
+                    <td><input type="text" name="city"></td>
+                </tr>
+                <tr>
+                    <th>Upload Resume</th>
+                    <td><input type="file" name="resume"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" class="btn btn-success">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+        <div class="jumbotron">
+            <!-- <iframe name="test" src="table"></iframe> -->
+            <iframe name="test" src="dbroutes/people"></iframe>
+        </div>
+    </body>
+</html>

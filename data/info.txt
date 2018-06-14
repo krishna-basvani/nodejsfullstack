@@ -1,0 +1,3 @@
+{"sno":"12","name":"Lewis","city":"Chennai"}
+{"sno":"1","name":"12","city":"213"}
+{"sno":"1","name":"12","city":"1asd"}
